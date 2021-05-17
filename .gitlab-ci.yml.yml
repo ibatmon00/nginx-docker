@@ -1,0 +1,9 @@
+stages:
+  - development
+
+development:
+  stage: development
+  script:
+    - docker-compose up --build -d
+  only:
+    - master
